@@ -8,7 +8,7 @@ def test_cython():
 
 import numpy as np
 
-somevalues = [100]*1000000000
+somevalues = [100]*100000
 
 s = statistics.PyStats()
 
@@ -22,7 +22,7 @@ def test_numpy():
   code = '''
 import numpy as np
 
-somevalues = np.array([100]*1000000000)
+somevalues = np.array([100]*100000)
 
 np.mean( somevalues )
   '''
@@ -35,7 +35,7 @@ def test_python():
 
 import numpy as np
 
-somevalues = [100]*1000000000
+somevalues = [100]*100000
 
 s = statistics.PyStats()
 

@@ -12,7 +12,7 @@ somevalues = [100]*1000
 
 s = statistics.PyStats()
 
-s.get_min( somevalues )
+s.get_mean( somevalues )
   '''
 
   print('Cython Mean', timeit.timeit(code, number=100))
